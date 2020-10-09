@@ -1,0 +1,15 @@
+version: '3.3'
+
+services:
+  personal-website:
+    image: node:12-buster-slim
+    container_name: personal_website_app
+    working_dir: /home/personal_website/
+    volumes:
+      - ./:/home/personal_website/
+    ports:
+      - 8000:8000
+    stdin_open: true
+    tty: true
+    entrypoint:
+      - bash
