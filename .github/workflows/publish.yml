@@ -1,0 +1,22 @@
+name: Publish Website
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Version short description
+        default: v1.0.0
+        required: true
+
+jobs:
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: enriikke/gatsby-gh-pages-action@v2
+        with:
+          access-token: ${{ secrets.ACCESS_TOKEN }}
+
+      - name: Create version tag
+        run: git tag ${{ github.event.inputs.version }}

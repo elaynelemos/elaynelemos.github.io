@@ -1,0 +1,28 @@
+name: Lint Code Base
+on:
+  - push
+  - pull_request
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone repo
+        uses: actions/checkout@v2
+      - name: Set VALIDATE_ALL_CODEBASE variable to false
+        # Only run the full workflow for manual runs or if upgrading the super linter
+        if: |
+            github.event_name != 'workflow' &&
+            startsWith(github.event.pull_request.title,'Bump github/super-linter') != true
+        run: |
+          echo "::set-env name=VALIDATE_ALL_CODEBASE::false"
+      - name: Lint Code Base
+        uses: github/super-linter@v3.11.0
+        env:
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VALIDATE_BASH: true
+          VALIDATE_CSS: true
+          VALIDATE_HTML: true
+          VALIDATE_JAVASCRIPT_ES: true
+          VALIDATE_JSON: true
+          VALIDATE_YAML: true
