@@ -13,7 +13,7 @@ jobs:
 
     runs-on: ubuntu-18.04
 
-    container: elaynelemos/node:12.19-slim
+    container: elaynelemos/vue:node-12.19-slim
 
     steps:
       - uses: actions/checkout@v2
