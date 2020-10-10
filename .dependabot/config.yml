@@ -1,7 +1,7 @@
-version: 2
+version: 1
 updates:
-  - package-ecosystem: "npm"
-    directory: "/src/"
+  - package-ecosystem: "javascript"
+    directory: "/"
     schedule:
       interval: "weekly"
   - package-ecosystem: "github-actions"
