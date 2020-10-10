@@ -1,1 +1,1 @@
-router: { base: '/' },
+router: { base: '/' }
