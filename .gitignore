@@ -2,4 +2,6 @@
 .vscode/
 
 #auxiliar files#
-source/
+node_modules/
+articles/*.md
+public/
