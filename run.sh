@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker-compose exec readme-generator "$@"
+docker-compose exec personal-website "$@"

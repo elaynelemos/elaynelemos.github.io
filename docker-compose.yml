@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
   personal-website:
-    image: node:12-buster-slim
+    image: elaynelemos/node:12.19-slim
     container_name: personal_website_app
     working_dir: /home/personal_website/
     volumes:
