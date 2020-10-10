@@ -1,35 +1,27 @@
 {
-  "name": "elaynelemos-gh-page",
+  "name": "elaynelemos.github.io",
+  "version": "1.0.0",
+  "description": "Personal website! :D",
+  "author": "elaynelemos <elayne.l.lemos@gmail.com>",
   "private": true,
-  "description": "Personal website hosted at GitHub to also support a blog with md(markdown)",
-  "version": "0.1.0",
-  "author": "Elayne Lemos <elayne.lemos@sysvale.com>",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop -H 0.0.0.0",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve -H 0.0.0.0",
-    "clean": "gatsby clean",
-    "test": "jest",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b main"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
-    "gatsby": "^2.23.12"
+    "nuxt": "^2.0.0"
   },
   "devDependencies": {
-    "gh-pages": "^3.1.0",
-    "jest": "26.4.2"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/rahuldkjain/gh-profile-readme-generator"
-  },
-  "bugs": {
-    "url": "https://github.com/rahuldkjain/gh-profile-readme-generator/issues"
+    "babel-eslint": "^10.0.1",
+    "eslint": "^4.19.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "push-dir": "^0.4.1"
   }
 }

@@ -1,7 +1,11 @@
-#development environment#
-.vscode/
+# dependencies
+node_modules
 
-#auxiliar files#
-node_modules/
-articles/*.md
-public/
+# logs
+npm-debug.log
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist
