@@ -32,6 +32,9 @@ jobs:
       - name: Build pages
         run: yarn run generate
 
+      - name: Changes readme page
+        run: echo "> Personal website v${{ github.event.inputs.version }}." > dist/README.md
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
