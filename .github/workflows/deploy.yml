@@ -40,4 +40,6 @@ jobs:
           publish_dir: ./dist
 
       - name: Create version tag
-        run: git tag ${{ github.event.inputs.version }}
+        run: |
+          git tag ${{ github.event.inputs.version }}
+          git push --tags
