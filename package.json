@@ -1,11 +1,11 @@
 {
   "name": "elaynelemos.github.io",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Personal website! :D",
   "author": "elaynelemos <elayne.l.lemos@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "HOST=0.0.0.0 PORT=8000 nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
