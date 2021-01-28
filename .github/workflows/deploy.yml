@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: Version short description
+        description: Version
         default: v1.0.0
         required: true
 
@@ -33,7 +33,7 @@ jobs:
         run: yarn run generate
 
       - name: Changes readme page
-        run: echo "> Personal website v${{ github.event.inputs.version }}." > dist/README.md
+        run: echo "> Personal website ${{ github.event.inputs.version }}." > dist/README.md
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
