@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Index properly mounted 1`] = `
+<section class="container">
+  <div><img src="../assets/img/logo.jpg">
+    <h2 class="subtitle">
+      Website in progress! :D
+    </h2>
+    <div class="links"><a href="https://linkedin.com/in/elaynelemos" target="_blank" class="button--green">LinkedIn</a> <a href="https://github.com/elaynelemos" target="_blank" class="button--grey">GitHub</a></div>
+    <div class="lds-ellipsis">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</section>
+`;
