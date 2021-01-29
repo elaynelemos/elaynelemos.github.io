@@ -13,7 +13,7 @@ jobs:
 
     runs-on: ubuntu-18.04
 
-    container: elaynelemos/vue:node-12.19
+    container: elaynelemos/vue:node-14.15
 
     steps:
       - uses: actions/checkout@v2
@@ -31,7 +31,7 @@ jobs:
         run: yarn run build
 
       - name: Test
-        run: yarn test
+        run: yarn run
 
       - name: Linter
         run: yarn run lint
