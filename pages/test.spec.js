@@ -1,11 +1,11 @@
 import { createLocalVue, mount } from '@vue/test-utils'
-import Index from '.'
+import index from './'
 
 const localVue = createLocalVue()
 
-describe('Index', () => {
+describe('IndexPage', () => {
   test('properly mounted', () => {
-    const wrapper = mount(Index, {
+    const wrapper = mount(index, {
       localVue,
     })
     expect(wrapper.html()).toMatchSnapshot()

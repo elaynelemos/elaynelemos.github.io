@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Index properly mounted 1`] = `
+exports[`IndexPage properly mounted 1`] = `
 <section class="container">
   <div><img src="../assets/img/logo.jpg">
     <h2 class="subtitle">
