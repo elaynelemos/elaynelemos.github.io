@@ -5,5 +5,8 @@ export default {
   },
   generate: {
     fallback: true
+  },
+  head: {
+    title: 'Elayne Lemos | In Progress...',
   }
 }
