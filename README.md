@@ -1,23 +1,17 @@
-# elaynelemos.github.io
+# Personal website project! :D
+> See at [elaynelemos.github.io](elaynelemos.github.io).
 
-> Personal website! :D
-
-## Build Setup
+## Setup for Development
 
 ``` bash
-# install dependencies
-$ npm install # Or yarn install
+# Build container
+$ docker-compose up -d
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+# Install dependencies
+$ ./run.sh yarn install
 
-# build for production and launch server
-$ npm run build
-$ npm start
-
-# generate static project
-$ npm run generate
+# build and serve with hot reload at localhost:8000
+$ ./run.sh yarn run dev
 ```
 
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
-
+Made with Nuxt. Checkout its [docs](https://nuxtjs.org/docs/2.x/get-started/installation).
