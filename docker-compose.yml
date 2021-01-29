@@ -2,11 +2,11 @@ version: '3.3'
 
 services:
   personal-website:
-    image: elaynelemos/node:12.19
+    image: elaynelemos/vue:node-14.15
     container_name: personal_website_app
-    working_dir: /home/personal_website/
+    working_dir: /home/app/
     volumes:
-      - ./:/home/personal_website/
+      - ./:/home/app/
     ports:
       - 8000:8000
     stdin_open: true

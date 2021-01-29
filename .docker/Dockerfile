@@ -1,4 +1,4 @@
-FROM node:12.19-buster-slim
+FROM node:14.15-buster-slim
 
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -12,11 +12,9 @@ RUN apt-get install -y \
   software-properties-common \
   bash-completion \
   ca-certificates \
-  net-tools \
   curl \
   wget \
   unzip \
-  htop \
   git
 
 RUN yarn global add vue http-server
