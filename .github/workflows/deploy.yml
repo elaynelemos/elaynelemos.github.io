@@ -12,7 +12,7 @@ jobs:
   deploy:
     runs-on: ubuntu-18.04
 
-    container: elaynelemos/vue:node-12.19
+    container: elaynelemos/vue:node-14.15
 
     steps:
       - uses: actions/checkout@v2
